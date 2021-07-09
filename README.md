@@ -1,1 +1,3 @@
-<h1> HTML-CSS-and-JavaScript </h1>
+<h2>HTML, CSS and JavaScript</h2>
+
+
