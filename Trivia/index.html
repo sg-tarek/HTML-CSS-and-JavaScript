@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+        // I add a listener which runs the function once the DOM is loaded
+        // In other words, the script is ignored until the the page has been fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // When the correct answer is clicked, change color to green
+
+            // We use the querySelector to select the button with the class = correct
+            // and store it in a variable called correct
+            let correct = document.querySelector('.correct');
+
+            // We another listener which activates a function when the button has been clicked
+            // Notice that we use '#' to refer to id when using the querySelector
+            // We use the id to update the currently empty paragraph
+            correct.addEventListener('click', function(){
+                correct.style.backgroundColor = 'green';
+                document.querySelector('#answer1').innerHTML = 'Correct!';
+            });
+
+            // When any incorrect answer is clicked, change color to red
+            // Given that we have a range of incorrect answers we can use the
+            // querySelectorAll to select all of them at once and store them in a variable
+            let incorrects = document.querySelectorAll('.incorrect');
+
+            // The selector creates a list with all the selected elements which can be accessed by index
+            // Afterward we simply add a listener to each element, which activates a function when clicked
+            for (let i = 0; i < incorrects.length; i++){
+                incorrects[i].addEventListener('click', function(){
+                   incorrects[i].style.backgroundColor = 'red';
+                   document.querySelector('#answer1').innerHTML = 'Incorrect';
+                });
+            }
+
+            // Check free response submission
+            document.querySelector('#check').addEventListener('click', function(){
+               let input = document.querySelector('input');
+               if (input.value === 'Copenhagen'){
+                   input.style.backgroundColor = 'green';
+                   document.querySelector('#answer2').innerHTML = 'Correct!';
+               } else {
+                   input.style.backgroundColor = 'red';
+                   document.querySelector('#answer2').innerHTML = 'Incorrect!';
+               }
+
+            });
+
+        });
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- First Question-->
+                <h3>What is the approximate ratio of people to sheep in New Zealand</h3>
+
+                <!-- Difference between id and class attribute: The only difference between
+                them is that “id” is unique in a page and can only apply to at most one element,
+                while “class” selector can apply to multiple elements. -->
+
+                <button class="incorrect">6 people per 1 sheep</button>
+                <button class="incorrect">3 people per 1 sheep</button>
+                <button class="incorrect">1 people per 1 sheep</button>
+                <button class="incorrect">1 people per 3 sheep</button>
+                <button class="correct">1 people per 6 sheep</button>
+                <p id="answer1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- Second Question -->
+                <h3>What's the capital of Denmark?</h3>
+           		<input type="text" placeholder="Example: Paris">
+ 			    <button id="check">Chech Answer</button>
+
+                <p id="answer2"></p>
+
+            </div>
+
+        </div>
+    </body>
+</html>
