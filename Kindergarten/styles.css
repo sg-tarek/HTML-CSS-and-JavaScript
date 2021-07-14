@@ -1,0 +1,116 @@
+/* Have at least one stylesheet file of your own creation,
+styles.css, which uses at least five (5) different CSS selectors
+(e.g. tag (example), class (.example), or ID (#example)),
+and within which you use a total of at least five (5) different CSS properties,
+such as font-size, or margin; */
+
+/*Use CSS to make the container look good with padding*/
+/*Element's padding is the space between its content and its border.*/
+.container {
+  padding: 80px 120px;
+}
+
+/*Mage images a little transparent and change border*/
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  opacity: 0.7;
+}
+
+/*A grey frame covers the picture when the mouse hover the image*/
+.person:hover {
+  border-color: #f1f1f1;
+}
+
+/*Add border to images in the history section*/
+.rounded {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  border-color: #f1f1f1;
+}
+
+/*Use CSS to style the carousel:*/
+.carousel-inner img {
+  -webkit-filter: grayscale(60%);
+  filter: grayscale(60%); /* make all photos black and white */
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}
+
+.carousel-caption h3 {
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+
+/*CSS to style the panels in the pricing file*/
+
+.panel {
+  border: 1px solid #f4511e;
+  border-radius:0;
+  transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+  border: 1px solid #f4511e;
+  background-color: #fff !important;
+  color: #f4511e;
+}
+
+.panel-heading {
+  color: #fff !important;
+  background-color: #f4511e !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+  background-color: #fff !important;
+}
+
+.panel-footer h3 {
+  font-size: 32px;
+}
+
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #f4511e;
+  color: #fff;
+}
+
+/*Navigation menu*/
+
+/*Adjusting the color to black*/
+.nav-pills li a {
+  color: #000000 !important;
+}
+
+/* On hover, the links will turn blue */
+.nav-pills li a:hover {
+  color: #1e90ff !important;
+}
+
+
+/*Footer*/
+/*CSS to add space - used in footer*/
+label {
+   white-space: pre;
+}
