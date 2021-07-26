@@ -1,7 +1,7 @@
 <h2>HTML, CSS and JavaScript</h2>
 
 <h3>Kindergarten</h3>
-I created a multiple sided web page for my mothers kindergarten i Egypt. The page consists of HTML, CSS, JavaScript and Bootstrap. Visit the site here: https://sg-tarek.github.io/ \
+I created a multiple sided web page for my mothers kindergarten i Egypt. The page consists of HTML, CSS, JavaScript and Bootstrap. Visit the site here: https://sg-tarek.github.io/ <br/>
 
 <p align="center">
   <img width="491" alt="Kindergarten" src="https://github.com/sg-tarek/HTML-CSS-and-JavaScript/blob/main/Kindergarten/images/kindergarten-page.png">
