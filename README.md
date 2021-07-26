@@ -1,7 +1,7 @@
 <h2>HTML, CSS and JavaScript</h2>
 
 <h3>Kindergarten</h3>
-I created a multiple sided web page for my mothers kindergarten i Egypt. The page consists of HTML, CSS, JavaScript and Bootstrap. Visit the site here: https://sg-tarek.github.io/ <br />
+I created a multiple sided web page for my mothers kindergarten i Egypt. The page consists of HTML, CSS, JavaScript and Bootstrap. Visit the site here: https://sg-tarek.github.io/ 
 
 <p align="center">
   <img width="491" alt="Kindergarten" src="https://github.com/sg-tarek/HTML-CSS-and-JavaScript/blob/main/Kindergarten/images/kindergarten-page.png">
@@ -15,4 +15,11 @@ Goal: Design a webpage using HTML, CSS, and JavaScript to let users answer trivi
 
 <p align="center">
 <img width="491" alt="Math_for_kids" src="https://github.com/sg-tarek/HTML-CSS-and-JavaScript/blob/main/Trivia/Trivia-page.png">
+</p>
+
+<h3>Brithdays</h3>
+A simple web application to keep track of friends’ birthdays. The web app uses flask to handle HTTP requests and SQLite to store the data. Unfortunately Github Pages only stores static web site so a link is not made available.
+
+<p align="center">
+<img width="491" alt="Birthday web application" src="https://github.com/sg-tarek/HTML-CSS-and-JavaScript/blob/main/Birthdays/Birthdays-page.png">
 </p>
