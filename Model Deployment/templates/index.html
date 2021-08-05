@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block body%}
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-sm-6">
+
+            <!-- Use the action attribute to call the 'main' function -->
+            <form action="{{ url_for('main') }}" method="POST">
+            <fieldset>
+                <legend>Input values:</legend>
+                <br> Temperature:
+                <br>
+                <!-- Required attribute is used to make sure people input values -->
+                <!-- We even make it dummy proof by inserting placeholders -->
+                <input class="form-control is-invalid" name="temperature" type="number" autofocus required placeholder="Insert number">
+                
+                <br> Humidity:
+                <br>
+                <input class="form-control is-invalid" name="humidity" type="number" required placeholder="Insert number">
+                
+                <br> Windspeed:
+                <br>
+                <input class="form-control is-invalid" name="windspeed" type="number" required placeholder="Insert number">
+                <br>
+                <br>
+                <input class="btn btn-primary" type="submit">
+            </fieldset>
+            </form>
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;" align="center">
+                
+                <!-- Our 'result' is false until a prediction has been made -->
+                <div class="card-header">Prediction</div>
+                {% if result %}
+
+                    <!-- Loop through dictionary and print key:value pair -->
+                    {% for variable in original_input %}
+                        <b>{{ variable }}:</b> {{ original_input[variable] }}
+                    {% endfor %}
+                    <br>
+                    <!-- Print prediction -->
+                    <br> Predicted number of bikes in use:
+                    <p style="font-size:50px">{{ result }}</p>
+                    
+                {% endif %}
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock%}
+
+
+
+
+

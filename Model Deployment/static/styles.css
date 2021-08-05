@@ -1,0 +1,29 @@
+form {
+    margin: auto;
+    width: 95%;
+}
+
+/*Use CSS to make the container look good with padding*/
+/*Element's padding is the space between its content and its border.*/
+.container {
+  padding: 80px 120px;
+}
+
+/*Navigation menu*/
+
+/*Adjusting the color to black*/
+.nav-pills li a {
+  color: #000000 !important;
+}
+
+/* On hover, the links will turn blue */
+.nav-pills li a:hover {
+  color: #1e90ff !important;
+}
+
+
+/*Footer*/
+/*CSS to add space - used in footer*/
+label {
+  white-space: pre;
+}

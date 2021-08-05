@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block body%}
+    
+    <br>
+    <div class="container-fluid text-center">
+      <div class="row">
+
+        <div class="col-sm-6">
+          <img class="rounded" src="{{ url_for('static', filename='author.png') }}" alt="Tarek Ghanoum" width="350" height="450">
+        </div>
+
+        <div class="col-sm-6">
+          <h3>Congratulations</h3>
+          <p>
+            You have made it so far on your journey to deploy your own model. I can only hope that my work has inspired you.
+            <br>
+            <br>
+            Please feel free to drop a comment if you have any difficulties understanding my code.
+            <br>
+            <br>
+            I hope you can give my article a clap and follow me on medium to recieve more articles.
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+{% endblock%}

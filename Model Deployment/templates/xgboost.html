@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body%}
+
+<div class="card border-secondary mb-3">
+    <div class="card-header">Model Explanation</div>
+    <div class="card-body text-secondary">
+      <h5 class="card-title">XGBoost</h5>
+      <p class="card-text">
+
+        XGBoost provides a parallel tree boosting (also known as GBDT, GBM). XGBoost is based on the idea of boosting. 
+        It’s one of the most powerful machine learning tools where the algorithm iteratively creates a DT model that corrects the previous model’s mistakes. 
+        The process differs depending on whether we have a classification or regression problem.
+        <br>
+        <br>
+        Although powerful, the underlying mechanism can be hard to follow, and without proper hyperparameter tuning, overfitting can happen. 
+        The idea of boosting is to correct the mistakes of former models while bagging builds models parallel to each other and gives each model a final say.
+        <br>
+        <br>
+        ...
+
+      </p>
+    </div>
+</div>
+
+{% endblock%}
